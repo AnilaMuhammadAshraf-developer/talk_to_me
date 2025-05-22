@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:talk_to_me/screen/social.dart';
 import 'package:talk_to_me/screen/splash.dart';
 import 'package:talk_to_me/utils/app_string.dart';
 void main(){
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title:AppString.appTitle,
-      home:SplashScreen()
+      home:SocialScreen()
     );
   }
 }

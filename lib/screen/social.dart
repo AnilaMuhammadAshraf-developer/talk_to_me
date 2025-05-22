@@ -47,16 +47,16 @@ class SocialScreen extends StatelessWidget{
       body:CustomContainer(
         child:Column(
           children: [
-             SizedBox(height:70),
+             SizedBox(height:103),
             
               Image.asset('assets/logo/logo.png',width:200,),
-             SizedBox(height:5),
+             SizedBox(height:20),
               Text(AppString.socialHeadingText,style: TextStyle(color:AppColor.appMainColor,fontWeight:FontWeight.bold,fontSize:16),),
               SizedBox(height:10),
               ..._socialList.asMap().entries.map((entry){
                 var item=entry.value;
                  return Padding(
-                padding: EdgeInsets.only(top:5),
+                padding: EdgeInsets.only(left:40,right:40,top:5),
                    child:  CustomButton(labelText:item['label'], onSocialSelection:()=>_onSocialSelection(item['social_type']), bgColor: item['bg_color'], fgColor: item['fg_color'],icon: item['icon'],)
                  );
                
@@ -64,7 +64,7 @@ class SocialScreen extends StatelessWidget{
              
                  
               }).toList(),
-            SizedBox(height:30),
+            SizedBox(height:103),
             Text(AppString.socialAgreeText),
             SizedBox(height: 5),
             Row(

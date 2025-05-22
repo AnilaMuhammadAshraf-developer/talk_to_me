@@ -23,14 +23,14 @@ class _SplashScreenState extends State<SplashScreen>{
          child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height:120),
+            SizedBox(height:170),
             SizedBox(
-              height:120,
+              height:100,
               child:Center(
               child:Image.asset('assets/logo/logo.png',width:300)
               ),
             ),
-          SizedBox(height:30),
+          SizedBox(height:103),
           Padding(
             padding: EdgeInsets.only(left:20),
           child:Text(AppString.splashHeadingText,style:TextStyle(color:AppColor.appMainColor,fontSize:24,fontWeight: FontWeight.bold)),
@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen>{
             padding: EdgeInsets.only(left:20),
             child:Text.rich(TextSpan(text:AppString.splashDarkText,style:TextStyle(fontSize:14,fontWeight:FontWeight.bold,color:AppColor.appMainColor),
                  children: [
-                  TextSpan(text:AppString.splashParagraph,style:TextStyle(fontSize:12,color:AppColor.appLightColor,fontWeight: FontWeight.w100))
+                  TextSpan(text:AppString.splashParagraph,style:TextStyle(fontSize:12,color:AppColor.appLightColor,fontWeight: FontWeight.w400))
                  ]
                  )),
           ),
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen>{
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                  
-                            Text(AppString.splashBtnText,style:TextStyle(color:AppColor.appMainColor)),
+                            Text(AppString.splashBtnText,style:TextStyle(color:AppColor.appMainColor,fontWeight:FontWeight.bold)),
                             SizedBox(width:3),
                             InkWell( 
                             onTap:_onTap,
