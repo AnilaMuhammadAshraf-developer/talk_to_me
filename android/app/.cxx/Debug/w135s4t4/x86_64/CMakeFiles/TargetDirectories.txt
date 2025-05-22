@@ -1,0 +1,2 @@
+G:/talk_to_me/android/app/.cxx/Debug/w135s4t4/x86_64/CMakeFiles/edit_cache.dir
+G:/talk_to_me/android/app/.cxx/Debug/w135s4t4/x86_64/CMakeFiles/rebuild_cache.dir
